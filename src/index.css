@@ -1,0 +1,49 @@
+.footer{
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+input[type='register'], input[type='origin'], input[type='destination'], input[type='weight']{
+    padding: 10px;
+    margin: 10px 0;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.srazul{
+    font-size: 15px;
+    background-color: rgb(0, 0, 67);
+}
+.srlar{
+    font-size: 15px;
+    background-color: orangered;
+}
+.laranja{
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    border-radius:0 20px 20px 0;
+}
+.azul{
+    background-color: rgb(0, 0, 67);
+    color:gainsboro;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+.check{
+    background-color: rgb(0, 0, 67); 
+    color:white;
+    border-radius: 12px;
+    height: 40px;
+    width: 90px;
+    font-weight: bold;
+    border: none;
+}
+.check:hover{
+    background-color: rgb(12, 12, 158);
+    transform: scale(1.03);
+    cursor: pointer;
+}
