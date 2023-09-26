@@ -6,44 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackerz</title>
     <link rel="stylesheet" href="src/index.css">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png">
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="h">
             <div>
-                <!--TRACKERZ-->
+                <h1 class="textheader">Trackerz</h1>
             </div>
-
-            <div>
-                <!--NAVEGAÇÃO-->
+            <div class="menu">
+                <menu class="menuh">Company</menu>
+                <menu class="menuh">Our Service</menu>
+                <menu class="menuh">Business Solution</menu>
+                <menu class="menuh">Careers</menu>
             </div>
-
-            <div>
-                <!--BOTOES-->
+            <div class="botoes">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
             </div>
         </div>
     </header>
 
     <section>
-        <div>
-            <div>
-                <!--TEXTO-->
+        <div class="div1">
+            <div class="texto">
+                <h1>Better distribution</h1>
+                <h1>experience, fast</h1>
+                <h1>and safe delivery</h1>
+                <h1>with <a>Trackerz</a></h1>
+                <p>Trust us with all your delivers, we guarantee we will handle </p>
+                <p>them carefully, quickly and cheaply</p>
             </div>
-           
             <div>
-                <!--IMAGEM-->
+                <img src="imagens/imagem.jpg" alt="imagem principal" class="img">
             </div>
         </div>
     </section>
 
-    <footer>
-        <div>
-            <!--AZUL-->
-        </div>
-        <div>
-            <!--LARANJA-->
-        </div>
+    <footer class="footer">
+        <div class="azul">
+            <h1 class="srazul">Tracking Package</h1>
+              <input type="register" id="register" name="register" required placeholder="your registered number">
+              <button class="trcbtn">Tracking</button>
+      </div>
+      <div class="laranja">
+          <h1 class="srlar">Shipping rate</h1>
+              <input type="origin" id="origin" name="origin" required placeholder="Your origin">
+              <input type="destination" id="destination" name="destination" required placeholder="Your destination">
+              <input type="weight" id="weight" name="weight" placeholder="1">
+              <button class="check">Check</button>
+      </div>
     </footer>
 
 </body>
