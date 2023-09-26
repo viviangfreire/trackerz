@@ -1,96 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Kanit:wght@600&family=Mooli&family=Quicksand:wght@700&family=Roboto:ital,wght@1,100&display=swap');
 
-
-*{
+/* #region: whole file */
+* {
     background-color: rgb(247, 247, 247);
     font-family: 'Mooli', sans-serif;
 }
-.textheader{
-    color:rgb(251, 80, 37); 
-    font-size: 30px;
-}
-.h{
+
+/* #endregion */
+
+/* #region: header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 80px 20px 80px;
     margin: 15px 80px 20px 80px;
 }
-.img{
-    max-width: 500px;
+
+.headertext {
+    color: rgb(251, 80, 37);
+    font-size: 30px;
 }
-.texto{
+
+button {
+    border-radius: 12px;
+    height: 40px;
+    width: 90px;
+    font-weight: bold;
+}
+
+.login {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.register,
+.tracking {
+    background-color: rgb(251, 80, 37);
+    color: white;
+    border: none;
+}
+
+.login:hover {
+    background-color: rgb(231, 231, 231);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.register:hover,
+.tracking:hover {
+    background-color: rgb(253, 140, 41);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.menuh:hover {
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region: container */
+.container {
+    padding: 0;
+    margin: 0 15em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto {
     align-items: center;
     font-size: 1.4rem;
 }
 
-h1{
+h1 {
     font-size: 50px;
     line-height: 10px;
 }
-a{
-    color:rgb(251, 80, 37); 
+
+span {
+    color: rgb(251, 80, 37);
 }
-p{
-    color:gray;
+
+p {
+    color: gray;
     font-size: 15px;
     line-height: 8px;
 }
-.div1{
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    display:flex;
-    justify-content: center;
 
-}
+.main-img {
+    max-width: 700px;
+}    
+/* #endregion */
 
-.footer{
+/* #region: search-menu */
+.search-menu {
     padding: 20px;
     margin: 10px;
     align-items: center;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-input[type='register'], input[type='origin'], input[type='destination'], input[type='weight']{
+input[type='register'],
+input[type='origin'],
+input[type='destination'],
+input[type='weight'] {
     padding: 10px;
     margin: 10px 0;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
 }
-.srazul{
+
+.srazul {
     font-size: 15px;
     background-color: rgb(0, 0, 67);
 }
-.srlar{
+
+.srlar {
     font-size: 15px;
     background-color: orangered;
 }
-.laranja{
+
+.laranja {
     background-color: orangered;
     color: white;
     padding: 20px;
-    border-radius:0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
 }
-.azul{
+
+.azul {
     background-color: rgb(0, 0, 67);
-    color:gainsboro;
+    color: gainsboro;
     padding: 20px;
     border-radius: 20px 0 0 20px;
 }
-.check{
-    background-color: rgb(0, 0, 67); 
-    color:white;
+
+.check {
+    background-color: rgb(0, 0, 67);
+    color: white;
     border-radius: 12px;
     height: 40px;
     width: 90px;
     font-weight: bold;
     border: none;
 }
-.check:hover{
+
+.check:hover {
     background-color: rgb(12, 12, 158);
     transform: scale(1.03);
-    cursor: pointer;
+    cursor: pointer;
 }
+
+/* #endregion */
