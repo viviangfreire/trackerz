@@ -168,7 +168,7 @@ input[type="weight"] {
 
 /* #endregion */
 
-/*---------------FORMULÁRIOS------------------ */
+/* #region: -----FORMULÁRIOS----- */
 
 .oculto {
   display: none;
@@ -231,3 +231,5 @@ input[type="weight"] {
   margin-bottom: 20px;
   font-weight: 600;
 }
+
+/* #endregion */
