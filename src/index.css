@@ -19,7 +19,8 @@
 
 .headertext {
   color: rgb(251, 80, 37);
-  font-size: 30px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 button {
@@ -55,10 +56,20 @@ button {
   cursor: pointer;
 }
 
-.menu {
+
+.menu ul {
   display: flex;
-  font-size: 13px;
-  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.menu a {
+  color: #aaa;
+  margin-right: 4.5rem;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none ;
+  color: black;
   font-weight: bold;
 }
 
@@ -75,10 +86,12 @@ button {
 
 .container {
   display: flex;
-  margin: 0 5em 0 14em;
+  margin: 10px 150px;
+  padding: 10px 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   /* flex-direction: row; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
 }
 
 .main-img {
@@ -91,12 +104,13 @@ button {
 
 .headline {
   font-size: 30px;
-  margin-bottom: -50px;
+  align-items: center;
+  align-items: center;
 }
 
 .subheadline {
   color: gray;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
 }
 
@@ -212,7 +226,7 @@ input[type="weight"] {
 }
 
 ::placeholder {
-  color: #fff;
+  color: #b6b0b0;
 }
 
 .input-form:first-child {
@@ -230,4 +244,12 @@ input[type="weight"] {
   cursor: pointer;
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+input[type='text'],
+input[type='number'] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
