@@ -2,10 +2,10 @@
 
 /* #region: whole file */
 * {
-  margin: 0;
+margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(247, 247, 247);
+  background-color: var(--brand-light2)
 }
 
 :root {
@@ -13,6 +13,7 @@
   --light-orange: rgb(253, 140, 41);
   --blue-main: rgb(0, 0, 67);
   --brand-light: rgb(231, 231, 231);
+  --brand-light2: rgb(247, 247, 247);
   --brand-dark: rgb(0, 0, 0);
   --light-gray: rgb(157, 157, 157);
   --brand-orange: rgb(251, 80, 37);
@@ -25,7 +26,7 @@ html, body {
 }
 
 body {
-  background-color: var(--brand-light);
+  background-color: var(--brand-light2);
   font-family: "Mooli", sans-serif;
 }
 
@@ -36,32 +37,35 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px 20px 80px;
-  margin: 15px 80px 20px 80px;
+  padding: .94rem 5rem 1.25rem 5rem;
+  margin: .94rem 5rem 1.25rem 5rem;
 }
 
 .headertext {
   color: var(--orange-main);
-  font-size: 30px;
+  font-size: 1.88rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 button {
-  border-radius: 12px;
-  height: 40px;
-  width: 90px;
+  border-radius: .75rem;
+  height: 2.5rem;
+  width: 5.63rem;
   font-weight: bold;
 }
 
 .login {
-  background-color: var(--brand-light);
+  background-color: var(--brand-light2);
   color: var(--brand-dark);
-  border: var(--brand-dark);
+  border: .094rem solid var(--brand-dark);
 }
 
 .register,
 .tracking {
   background-color: var(--orange-main);
-  color: var(--brand-light);
+  color: var(--brand-light2);
   border: none;
 }
 
@@ -78,10 +82,26 @@ button {
   cursor: pointer;
 }
 
-.menu {
-  display: flex;
-  font-size: 13px;
+.buttons {
   justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.menu a {
+  color: #aaa;
+  margin-right: 2.5rem;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none ;
+  color: black;
   font-weight: bold;
 }
 
@@ -98,82 +118,85 @@ button {
 
 .container {
   display: flex;
-  margin: 0 5em 0 14em;
-  /* flex-direction: row; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
+  align-items: center;
+  justify-content:space-around;
+  margin: .25rem 4rem;
+  padding: .63rem 6.25rem;
+  flex-direction: row; 
 }
 
 .main-img {
-  max-width: 700px;
+  max-width: 43.75rem;
 }
 
 .text {
   flex-direction: column;
 }
 
-/*.headline {
-    font-size: 4em;
-    margin-bottom: -50px;
-}*/
+.headline {
+  font-size: 1.88rem;
+  align-items: center;
+  align-items: center;
+}
 
 .subheadline {
   color: var(--light-gray);
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.063rem;
+  line-height: 1.88rem;
 }
 
 .headline span {
   color: var(--brand-orange);
 }
+
 /* #endregion */
 
 /* #region: search-menu */
 .search-menu {
-  padding: 20px;
-  margin: 10px;
+  padding: 1.25rem;
+  margin: .63rem;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-input {  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+input {  padding: .63rem;
+  margin: .63rem 0;
+  border: .063rem solid #ccc;
+  border-radius: .25rem;
   cursor: pointer;
 }
 
 .srazul {
-  font-size: 15px;
+  font-size: .94rem;
   background-color: var(--blue-main);
 }
 
 .srlar {
-  font-size: 15px;
+  font-size: .94rem;
   background-color: var(--orange-main);
 }
 
 .laranja {
   background-color: var(--orange-main);
   color: var(--brand-light);
-  padding: 20px;
-  border-radius: 0 20px 20px 0;
+  padding: 1.25rem;
+  border-radius: 0 1.25rem 1.25rem 0;
 }
 
 .azul {
   background-color: var(--blue-main);
   color: gainsboro;
-  padding: 20px;
-  border-radius: 20px 0 0 20px;
+  padding: 1.25rem;
+  border-radius: 1.25rem 0 0 1.25rem;
 }
 
 .check {
   background-color: var(--blue-main);
   color: var(--brand-light);
-  border-radius: 12px;
-  height: 40px;
-  width: 90px;
+  border-radius: 0.75rem;
+  height: 2.5rem;
+  width: 5.63rem;
   font-weight: bold;
   border: none;
 }
@@ -229,10 +252,6 @@ input {  padding: 10px;
   margin-left: 3.5rem;
 }
 
-::placeholder {
-  color: #fff;
-}
-
 .input-form:first-child {
   margin-top: 4rem;
 }
@@ -248,4 +267,12 @@ input {  padding: 10px;
   cursor: pointer;
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+input[type='text'],
+input[type='number'] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
