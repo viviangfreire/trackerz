@@ -180,7 +180,7 @@ button {
 
 .left-side {
   background-color: var(--blue-main);
-  color: gainsboro;
+  color: var(--brand-light);
   padding: 1.25rem;
   border-radius: 1.25rem 0 0 1.25rem;
 }
@@ -188,6 +188,13 @@ button {
 .menu-heading {
   font-size: 20px;
   background-color: transparent;
+}
+
+.right-side {
+  background-color: var(--orange-main);
+  color: var(--brand-light);
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
 }
 
 .menuInput {
@@ -198,27 +205,20 @@ button {
   /* cursor: pointer; */
 }
 
-.right-side {
-  /* background-color: var(--orange-main); */
-  /* color: var(--brand-light); */
-  /* padding: 20px; */
-  /* border-radius: 0 20px 20px 0; */
-}
-
 .check {
-  /* background-color: var(--blue-main); */
-  /* color: var(--brand-light); */
-  /* border-radius: 12px; */
-  /* height: 40px; */
-  /* width: 90px; */
-  /* font-weight: bold; */
-  /* border: none; */
+  background-color: var(--blue-main);
+  color: var(--brand-light);
+  border-radius: 12px;
+  height: 40px;
+  width: 90px;
+  font-weight: bold;
+  border: none;
 }
 
 .check:hover {
-  /* background-color: var(--light-blue); */
-  /* transform: scale(1.03); */
-  /* cursor: pointer; */
+  background-color: var(--light-blue);
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 /* #endregion */
