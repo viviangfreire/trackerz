@@ -89,10 +89,10 @@ button {
   flex-direction: column;
 }
 
-/*.headline {
-    font-size: 4em;
-    margin-bottom: -50px;
-}*/
+.headline {
+  font-size: 30px;
+  margin-bottom: -50px;
+}
 
 .subheadline {
   color: gray;
@@ -103,6 +103,7 @@ button {
 .headline span {
   color: rgb(251, 80, 37);
 }
+
 /* #endregion */
 
 /* #region: search-menu */
