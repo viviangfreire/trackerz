@@ -2,7 +2,31 @@
 
 /* #region: whole file */
 * {
-  background-color: rgb(247, 247, 247);
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--brand-light2)
+}
+
+:root {
+  --orange-main: rgb(255, 69, 0);
+  --light-orange: rgb(253, 140, 41);
+  --blue-main: rgb(0, 0, 67);
+  --brand-light: rgb(231, 231, 231);
+  --brand-light2: rgb(247, 247, 247);
+  --brand-dark: rgb(0, 0, 0);
+  --light-gray: rgb(157, 157, 157);
+  --brand-orange: rgb(251, 80, 37);
+  --light-blue: rgb(12, 12, 158);
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--brand-light);
   font-family: "Mooli", sans-serif;
 }
 
@@ -13,57 +37,67 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px 20px 80px;
-  margin: 15px 80px 20px 80px;
+  padding: .94rem 5rem 1.25rem 5rem;
+  margin: .94rem 5rem 1.25rem 5rem;
 }
 
 .headertext {
-  color: rgb(251, 80, 37);
-  font-size: 30px;
+  color: var(--orange-main);
+  font-size: 1.88rem;
+  text-decoration: none;
 }
 
 button {
-  border-radius: 12px;
-  height: 40px;
-  width: 90px;
+  border-radius: .75rem;
+  height: 2.5rem;
+  width: 5.63;
   font-weight: bold;
 }
 
 .login {
-  background-color: white;
-  color: black;
-  border-color: black;
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+  border: var(--brand-dark);
 }
 
 .register,
 .tracking {
-  background-color: rgb(251, 80, 37);
-  color: white;
+  background-color: var(--orange-main);
+  color: var(--brand-light);
   border: none;
 }
 
 .login:hover {
-  background-color: rgb(231, 231, 231);
+  background-color: var(--brand-light);
   transform: scale(1.03);
   cursor: pointer;
 }
 
 .register:hover,
 .tracking:hover {
-  background-color: rgb(253, 140, 41);
+  background-color: var(--light-orange);
   transform: scale(1.03);
   cursor: pointer;
 }
 
-.menu {
+.menu ul {
   display: flex;
-  font-size: 13px;
-  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+.menu a {
+  color: #aaa;
+  margin-right: 4.5rem;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none ;
+  color: black;
   font-weight: bold;
 }
 
 .menuh:hover {
-  color: rgb(157, 157, 157);
+  color: var(--light-gray);
   cursor: pointer;
 }
 
@@ -75,14 +109,16 @@ button {
 
 .container {
   display: flex;
-  margin: 0 5em 0 14em;
+  margin: .63rem 9.38rem;
+  padding: .63rem 6.25rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   /* flex-direction: row; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
 }
 
 .main-img {
-  max-width: 700px;
+  max-width: 43.75rem;
 }
 
 .text {
@@ -90,18 +126,19 @@ button {
 }
 
 .headline {
-  font-size: 30px;
-  margin-bottom: -50px;
+  font-size: 1.88rem;
+  align-items: center;
+  align-items: center;
 }
 
 .subheadline {
-  color: gray;
-  font-size: 20px;
-  line-height: 30px;
+  color: var(--light-gray);
+  font-size: 1.063rem;
+  line-height: 1.88rem;
 }
 
 .headline span {
-  color: rgb(251, 80, 37);
+  color: var(--brand-orange);
 }
 
 /* #endregion */
@@ -115,11 +152,7 @@ button {
   justify-content: center;
 }
 
-input[type="register"],
-input[type="origin"],
-input[type="destination"],
-input[type="weight"] {
-  padding: 10px;
+input {  padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -128,31 +161,31 @@ input[type="weight"] {
 
 .srazul {
   font-size: 15px;
-  background-color: rgb(0, 0, 67);
+  background-color: var(--blue-main);
 }
 
 .srlar {
   font-size: 15px;
-  background-color: orangered;
+  background-color: var(--orange-main);
 }
 
 .laranja {
-  background-color: orangered;
-  color: white;
+  background-color: var(--orange-main);
+  color: var(--brand-light);
   padding: 20px;
   border-radius: 0 20px 20px 0;
 }
 
 .azul {
-  background-color: rgb(0, 0, 67);
+  background-color: var(--blue-main);
   color: gainsboro;
   padding: 20px;
   border-radius: 20px 0 0 20px;
 }
 
 .check {
-  background-color: rgb(0, 0, 67);
-  color: white;
+  background-color: var(--blue-main);
+  color: var(--brand-light);
   border-radius: 12px;
   height: 40px;
   width: 90px;
@@ -161,7 +194,7 @@ input[type="weight"] {
 }
 
 .check:hover {
-  background-color: rgb(12, 12, 158);
+  background-color: var(--light-blue);
   transform: scale(1.03);
   cursor: pointer;
 }
@@ -232,4 +265,10 @@ input[type="weight"] {
   font-weight: 600;
 }
 
-/* #endregion */
+input[type='text'],
+input[type='number'] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
