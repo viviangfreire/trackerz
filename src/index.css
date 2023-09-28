@@ -208,11 +208,11 @@ button {
   display: none;
 }
 
-.form-container form {
+.form-container {
   width: 400px;
   min-height: 400px;
-  background: rgba(0, 0, 67, 0.477);
-  border-radius: 10px;
+  background:rgba(246, 244, 241, 0.74);
+  border-radius: 10px, 0.192;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -228,6 +228,19 @@ button {
   /*centralizando verticalmente e horizontalmente em relação ao pai*/
 }
 
+.imgforms{
+  width: 100%;
+  right:60%;
+  left: 60%; 
+  border: none;
+ /* height: 50em; */
+  /* margin: 0%; */
+}
+.imgforms2{
+  width: 100%;
+  right:80%;
+  border: none;
+}
 .input-form {
   width: 60%;
   background: rgba(0, 0, 67, 0.477);
@@ -243,6 +256,10 @@ button {
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-left: 3.5rem;
+}
+
+::placeholder {
+  color: black;
 }
 
 .input-form:first-child {
@@ -261,13 +278,13 @@ button {
   margin-bottom: 20px;
   font-weight: 600;
 }
+.absolut{
+  position: absolute;
+  margin: 50px 0 0 0;
+background: none;
 
-input[type='text'],
-input[type='number'] {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
-
-/* #endregion */
+.absolut2{
+  position: absolute;
+  background: none;
+}
