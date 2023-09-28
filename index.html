@@ -23,7 +23,6 @@
             <li><a href="#" class="menuh">Careers</a></li>
           </ul>
         </div>
-        <!--AQUI NÃO PRECISA DESSA DIV-->
         <div class="buttons">
           <button class="login button" id="showLoginBtn">Login</button>
           <!--PRIMEIRO FORMULÁRIO DE LOGIN-->
@@ -104,23 +103,28 @@
       </section>
     </main>
 
-  <section class="search-menu">
-    <!-- ! colocar os inputs dentro de forms -->
-    <div class="left-side">
-      <p class="menu-heading">Tracking Package</p>
-      <input class="menuInput" type="number" id="register" name="register" required
-        placeholder="your registered number" />
-      <button class="tracking button">Tracking</button>
-    </div>
+  <section>
+    <div class="search-menu">
+      <div class="left-side">
+        <h4 class="menu-heading">Tracking Package</h4>
+        <input class="menuInput" type="number" id="register" name="register" required
+          placeholder="your registered number" />
+        <button class="tracking button">Tracking</button>
+      </div>
 
-    <div class="right-side">
-      <p class="menu-heading">Shipping rate</p>
-      <input class="menuInput" type="text" id="origin" name="origin" required placeholder="Your origin" />
-      <input type="text" id="destination" name="destination" required placeholder="Your destination" />
-      <input type="number" id="weight" name="weight" placeholder="1" />
-      <button class="check">Check</button>
+      <div class="right-side">
+        <h4 class="menu-heading">Shipping rate</h4>
+        <div class="input-group">
+          <input class="menuInput" type="text" id="origin" name="origin" required placeholder="Your origin" />
+          <input class="menuInput" type="text" id="destination" name="destination" required
+            placeholder="Your destination" />
+          <input class="menuInput" type="number" id="weight" name="weight" placeholder="1" />
+          <button class="check">Check</button>
+        </div>
+      </div>
     </div>
   </section>
+
   <section>
     
   </section>
