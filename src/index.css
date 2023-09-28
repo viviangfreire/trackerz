@@ -27,7 +27,6 @@ body {
 }
 
 body {
-  box-sizing: border-box;
   background-color: var(--brand-light2);
   font-family: 'Roboto', sans-serif;
 }
@@ -39,13 +38,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .94rem 5rem 1.25rem 5rem;
-  margin: .94rem 5rem 1.25rem 5rem;
+  padding: 1.5rem;
+  margin-inline: 9rem;
 }
 
 .headertext {
   color: var(--orange-main);
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 button {
@@ -53,12 +53,13 @@ button {
   height: 2.5rem;
   width: 5.63rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .login {
   background-color: var(--brand-light2);
-  color: var(--brand-dark);
-  border: .1rem solid var(--brand-dark);
+  color: var(--blue-main);
+  border: .1rem solid var(--blue-main);
 }
 
 .register,
@@ -71,14 +72,12 @@ button {
 .login:hover {
   background-color: var(--brand-light);
   transform: scale(1.03);
-  cursor:pointer;
 }
 
 .register:hover,
 .tracking:hover {
   background-color: var(--light-orange);
   transform: scale(1.03);
-  cursor:pointer;
 }
 
 .menu ul {
@@ -87,11 +86,9 @@ button {
 }
 
 .menu a {
-  margin-right: 4.5rem;
-  display: inline-block;
+  margin-right: 1.5rem;
   transition: 0.3s;
-  text-decoration: none;
-  color: var(--brand-dark);
+  color: var(--blue-main);
   font-weight: bold;
 }
 
@@ -107,25 +104,15 @@ button {
 
 .container {
   display: flex;
-  margin: .63rem 9.38rem;
-  padding: .63rem 6.25rem;
+  margin-inline: 2rem;
+  padding: 1rem;
   align-items: center;
-  justify-content: center;
-  /* flex-direction: row; */
-}
-
-.main-img {
-  max-width: 43.75rem;
-}
-
-.text {
-  flex-direction: column;
 }
 
 .headline {
   font-size: 1.88rem;
-  align-items: center;
-  align-items: center;
+  padding-inline: 8rem;
+  color: var(--blue-main);
 }
 
 .subheadline {
@@ -364,7 +351,4 @@ li {
   display: inline-block;
 }
 
-@media (max-width: 480px) {
-  
-}
 
