@@ -27,22 +27,24 @@
         <button class="login button" id="showLoginBtn">Login</button>
         <!--PRIMEIRO FORMULÁRIO DE LOGIN-->
         <div id="loginForm" class="form-container oculto">
-          <form>
+          <form class="absolut">
             <input type="text" class="input-form" name="nome" placeholder="Username" />
             <input type="password" class="input-form" name="email" placeholder="Password" />
             <input type="submit" value="Enviar" class="btn input-form" />
           </form>
+          <img src="./imagens/anima-3.gif" alt="" class="imgforms">
         </div>
         <button class="register button" id="showCadastroBtn">Register</button>
         <!--SEGUNDO FORMULÁRIO PARA CADASTRO-->
         <div id="cadastroForm" class="form-container oculto">
-          <form>
+          <form class="absolut">
             <input type="text" class="input-form" name="name" placeholder="Name" />
             <input type="email" class="input-form" name="email" placeholder="E-mail" />
             <input type="password" class="input-form" name="password" placeholder="Password" />
             <input type="password" class="input-form" name="confPassword" placeholder="Confirm Password" />
             <input type="submit" value="Enviar" class="btn input-form" />
           </form>
+<img src="/imagens/anima-3.gif" alt="" class="imgforms2">
         </div>
       </div>
     </nav>
@@ -73,18 +75,32 @@
     <div class="search-menu">
       <div class="left-side">
         <h4 class="menu-heading">Tracking Package</h4>
-        <input class="menuInput" type="number" id="register" name="register" required
-          placeholder="your registered number" />
-        <button class="tracking button">Tracking</button>
+        <form>
+          <input class="menuInput" type="number" id="register" name="register" required
+            placeholder="Your registered number" />
+          <button class="tracking button">Tracking</button>
+        </form>
+        <p class="menuSubtitles">
+          Then Click 'TRACKING' Avaliable up to 20 Airwaybill
+        </p>
       </div>
 
       <div class="right-side">
         <h4 class="menu-heading">Shipping rate</h4>
         <div class="input-group">
-          <input class="menuInput" type="text" id="origin" name="origin" required placeholder="Your origin" />
-          <input class="menuInput" type="text" id="destination" name="destination" required
-            placeholder="Your destination" />
-          <input class="menuInput" type="number" id="weight" name="weight" placeholder="1" />
+          <div>
+            <input class="menuInput" type="text" id="origin" name="origin" required placeholder="Your origin" />
+            <p class="menuSubtitles white">Origin Shipment</p>
+          </div>
+         <div>
+            <input class="menuInput" type="text" id="destination" name="destination" required
+              placeholder="Your destination" />
+            <p class="menuSubtitles white">Destination Shipment</p>
+         </div>
+         <div>
+            <input class="menuInput" type="number" id="weight" name="weight" placeholder="1" />
+            <p class="menuSubtitles white">Weight</p>
+         </div>
           <button class="check">Check</button>
         </div>
       </div>
