@@ -222,7 +222,8 @@ button {
 
 /* #endregion */
 
-/* #region: -----FORMULÁRIOS----- */
+/* #region: 
+/*------------ FORMULÁRIOS ---------- */
 
 .oculto {
   display: none;
@@ -253,39 +254,7 @@ button {
   right: 60%;
   left: 60%;
   border: none;
-  /* height: 50em; */
-  /* margin: 0%; */
-}
-
-.imgforms2 {
-  width: 100%;
-  right: 80%;
-  border: none;
-}
-
-.imgforms {
-  width: 100%;
-  right: 60%;
-  left: 60%;
-  border: none;
-  /* height: 50em; */
-  /* margin: 0%; */
-}
-
-.imgforms2 {
-  width: 100%;
-  right: 80%;
-  border: none;
-}
-
-.imgforms {
-  width: 100%;
-  right: 60%;
-  left: 60%;
-  border: none;
-  /* height: 50em; */
-  /* margin: 0%; */
-}
+  }
 
 .imgforms2 {
   width: 100%;
@@ -311,7 +280,6 @@ button {
 ::placeholder {
   color: black;
 }
-
 
 .input-form:first-child {
   margin-top: 4rem;
@@ -366,5 +334,47 @@ li {
   display: inline-block;
 }
 
+
+@media (max-width: 480px) {
+  
+  /* Estilo para o botão de abertura do menu */
+#openMenuButton {
+  display: block;
+  margin: 10px;
+}
+
+/* Estilo para o menu móvel */
+#mobileMenu {
+  display: none;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#mobileMenu li {
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+}
 
 
