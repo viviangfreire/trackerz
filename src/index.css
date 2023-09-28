@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Kanit:wght@600&family=Mooli&family=Quicksand:wght@700&family=Roboto:ital,wght@1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Kanit:wght@600&family=Mooli&family=Quicksand:wght@700&family=Roboto:ital,wght@0,500;0,700;1,100&display=swap');
 
 /* #region: whole file */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2)
+  text-decoration: none;;
 }
 
 :root {
@@ -27,11 +27,9 @@ body {
 }
 
 body {
-  background-color: var(--brand-light2);
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2) font-family: "Mooli", sans-serif;
+  background-color: var(--brand-light2);
+  font-family: 'Roboto', sans-serif;
 }
 
 /* #endregion */
@@ -48,7 +46,6 @@ body {
 .headertext {
   color: var(--orange-main);
   font-size: 1.88rem;
-  text-decoration: none;
 }
 
 button {
@@ -59,29 +56,29 @@ button {
 }
 
 .login {
-  background-color: var(--brand-light);
+  background-color: var(--brand-light2);
   color: var(--brand-dark);
-  border: var(--brand-dark);
+  border: .1rem solid var(--brand-dark);
 }
 
 .register,
 .tracking {
   background-color: var(--orange-main);
-  color: var(--brand-light);
+  color: var(--brand-light2);
   border: none;
 }
 
 .login:hover {
   background-color: var(--brand-light);
   transform: scale(1.03);
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .register:hover,
 .tracking:hover {
   background-color: var(--light-orange);
   transform: scale(1.03);
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .menu ul {
@@ -91,18 +88,16 @@ button {
 }
 
 .menu a {
-  color: #aaa;
   margin-right: 4.5rem;
   display: inline-block;
   transition: 0.3s;
   text-decoration: none;
-  color: black;
+  color: var(--brand-dark);
   font-weight: bold;
 }
 
 .menuh:hover {
   color: var(--light-gray);
-  cursor: pointer;
 }
 
 /* #endregion */
@@ -116,7 +111,6 @@ button {
   margin: .63rem 9.38rem;
   padding: .63rem 6.25rem;
   align-items: center;
-  display: flex;
   justify-content: center;
   /* flex-direction: row; */
 }
@@ -139,6 +133,7 @@ button {
   color: var(--light-gray);
   font-size: 1.063rem;
   line-height: 1.88rem;
+  margin-top: 1rem;
 }
 
 .headline span {
@@ -166,6 +161,7 @@ button {
 .menu-heading {
   font-size: 20px;
   background-color: transparent;
+  color: var(--brand-light2);
 }
 
 .right-side {
@@ -185,7 +181,7 @@ button {
 
 .check {
   background-color: var(--blue-main);
-  color: var(--brand-light);
+  color: var(--brand-light2);
   border-radius: 12px;
   height: 40px;
   width: 90px;
@@ -207,11 +203,11 @@ button {
   display: none;
 }
 
-.form-container form {
+.form-container {
   width: 400px;
   min-height: 400px;
-  background: rgba(0, 0, 67, 0.477);
-  border-radius: 10px;
+  background:rgba(246, 244, 241, 0.74);
+  border-radius: 10px, 0.192;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -227,6 +223,19 @@ button {
   /*centralizando verticalmente e horizontalmente em relação ao pai*/
 }
 
+.imgforms{
+  width: 100%;
+  right:60%;
+  left: 60%; 
+  border: none;
+ /* height: 50em; */
+  /* margin: 0%; */
+}
+.imgforms2{
+  width: 100%;
+  right:80%;
+  border: none;
+}
 .input-form {
   width: 60%;
   background: rgba(0, 0, 67, 0.477);
@@ -235,13 +244,15 @@ button {
   padding: 10px 20px;
   border-radius: 35px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 16px;
   letter-spacing: 1px;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-left: 3.5rem;
+}
+
+::placeholder {
+  color: black;
 }
 
 .input-form:first-child {
@@ -261,13 +272,43 @@ button {
   font-weight: 600;
 }
 
-input[type='text'],
-input[type='number'] {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.absolut{
+  position: absolute;
+  background: none;
 }
 
-/* #endregion */
+/*-------------- FOOTER ------------------*/
+
+footer {
+  background-color: var(--blue-main);
+  padding-inline: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title-footer, .paragraph {
+  color: var(--orange-main);
+  text-align: left;
+  padding: 1rem;
+}
+
+.paragraph {
+  color: var(--brand-light2 );
+  line-height: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  
+}
 
