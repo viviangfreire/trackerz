@@ -5,8 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  ;
+  text-decoration: none;;
 }
 
 :root {
@@ -46,7 +45,7 @@ body {
 
 .headertext {
   color: var(--orange-main);
-  font-size: 1.3rem;
+  font-size: 1.88rem;
 }
 
 button {
@@ -72,14 +71,14 @@ button {
 .login:hover {
   background-color: var(--brand-light);
   transform: scale(1.03);
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .register:hover,
 .tracking:hover {
   background-color: var(--light-orange);
   transform: scale(1.03);
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .menu ul {
@@ -344,7 +343,7 @@ button {
   font-weight: 600;
 }
 
-.absolut {
+.absolut{
   position: absolute;
   background: none;
 }
@@ -361,15 +360,14 @@ footer {
   justify-content: space-around;
 }
 
-.title-footer,
-.paragraph {
+.title-footer, .paragraph {
   color: var(--orange-main);
   text-align: left;
   padding: 1rem;
 }
 
 .paragraph {
-  color: var(--brand-light2);
+  color: var(--brand-light2 );
   line-height: 1.5rem;
 }
 
@@ -381,4 +379,10 @@ li {
   display: inline-block;
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  
+}
+
+@media (max-width: 480px){
+  
+}
