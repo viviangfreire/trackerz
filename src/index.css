@@ -31,7 +31,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2) font-family: "Mooli", sans-serif;
+  background-color: var(--brand-light2);
+  font-family: "Mooli", sans-serif;
 }
 
 /* #endregion */
@@ -151,9 +152,10 @@ button {
 .search-menu {
   display: flex;
   justify-content: center;
-  /* padding: 20px; */
-  /* margin: 10px; */
-  /* align-items: center; */
+  align-items: stretch;
+  padding: 20px;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .left-side {
@@ -161,6 +163,7 @@ button {
   color: var(--brand-light);
   padding: 1.25rem;
   border-radius: 1.25rem 0 0 1.25rem;
+  flex: 1;
 }
 
 .menu-heading {
@@ -173,13 +176,21 @@ button {
   color: var(--brand-light);
   padding: 20px;
   border-radius: 0 20px 20px 0;
+  flex: 1;
+}
+
+.input-group{
+  background-color: transparent;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
 }
 
 .menuInput {
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 11px;
   cursor: pointer;
 }
 
@@ -199,6 +210,22 @@ button {
   cursor: pointer;
 }
 
+#register{
+  width: 25rem;
+}
+
+#origin{
+  max-width: 9rem;
+}
+
+#destination{
+  max-width: 14rem;
+}
+
+#weight{
+  max-width: 3rem;
+}
+
 /* #endregion */
 
 /* #region: -----FORMULÁRIOS----- */
@@ -210,7 +237,7 @@ button {
 .form-container {
   width: 400px;
   min-height: 400px;
-  background:rgba(246, 244, 241, 0.74);
+  background: rgba(246, 244, 241, 0.74);
   border-radius: 10px, 0.192;
   flex-direction: column;
   justify-content: center;
@@ -227,19 +254,21 @@ button {
   /*centralizando verticalmente e horizontalmente em relação ao pai*/
 }
 
-.imgforms{
+.imgforms {
   width: 100%;
-  right:60%;
-  left: 60%; 
+  right: 60%;
+  left: 60%;
   border: none;
- /* height: 50em; */
+  /* height: 50em; */
   /* margin: 0%; */
 }
-.imgforms2{
+
+.imgforms2 {
   width: 100%;
-  right:80%;
+  right: 80%;
   border: none;
 }
+
 .input-form {
   width: 60%;
   background: rgba(0, 0, 67, 0.477);
@@ -277,13 +306,15 @@ button {
   margin-bottom: 20px;
   font-weight: 600;
 }
-.absolut{
+
+.absolut {
   position: absolute;
   margin: 50px 0 0 0;
-background: none;
+  background: none;
 
 }
-.absolut2{
+
+.absolut2 {
   position: absolute;
   background: none;
 }

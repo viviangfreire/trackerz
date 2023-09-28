@@ -9,126 +9,99 @@
   <link rel="shortcut icon" href="imagens/favicon-32x32.png" />
 </head>
 
-  <body>
-    <header>
-      <nav class="header">
-        <a href="#" class="headertext">
-          <h2>Trackerz</h2>
-        </a>
-        <div class="menu">
-          <ul>
-            <li class="menuh">
-              <a href="#" class="menuh">Company</a>
-            </li>
-            <li>
-              <a href="#" class="menuh">Our Service</a>
-            </li>
-            <li>
-              <a href="#" class="menuh">Business Solution</a>
-            </li>
-            <li>
-              <a href="#" class="menuh">Careers</a>
-            </li>
-          </ul>
+<body>
+  <header>
+    <nav class="header">
+      <a href="#" class="headertext">
+        <h2>Trackerz</h2>
+      </a>
+      <div class="menu">
+        <ul>
+          <li class="menuh">
+            <a href="#" class="menuh">Company</a>
+          </li>
+          <li>
+            <a href="#" class="menuh">Our Service</a>
+          </li>
+          <li>
+            <a href="#" class="menuh">Business Solution</a>
+          </li>
+          <li>
+            <a href="#" class="menuh">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <!--AQUI NÃO PRECISA DESSA DIV-->
+      <div class="buttons">
+        <button class="login button" id="showLoginBtn">Login</button>
+        <!--PRIMEIRO FORMULÁRIO DE LOGIN-->
+        <div id="loginForm" class="form-container oculto">
+          <form class="absolut">
+            <input type="text" class="input-form" name="nome" placeholder="Username" />
+            <input type="password" class="input-form" name="email" placeholder="Password" />
+            <input type="submit" value="Enviar" class="btn input-form" />
+          </form>
+          <img src="/imagens/anima-3.gif" alt="" class="imgforms">
         </div>
-        <!--AQUI NÃO PRECISA DESSA DIV-->
-        <div class="buttons">
-          <button class="login button" id="showLoginBtn">Login</button>
-          <!--PRIMEIRO FORMULÁRIO DE LOGIN-->
-          <div id="loginForm" class="form-container oculto">
-            <form class="absolut">
-              <input
-                type="text"
-                class="input-form"
-                name="nome"
-                placeholder="Username"
-                />
-                <input
-                type="password"
-                class="input-form"
-                name="email"
-                placeholder="Password"
-                />
-                <input type="submit" value="Enviar" class="btn input-form" />
-              </form>
-            <img src="/imagens/anima-3.gif" alt="" class="imgforms">
-            </div>
-            <button class="register button" id="showCadastroBtn">Register</button>
-            <!--SEGUNDO FORMULÁRIO PARA CADASTRO-->
-            <div id="cadastroForm" class="form-container oculto">
-              <form class="absolut2">
-                <input
-                type="text"
-                class="input-form"
-                name="name"
-                placeholder="Name"
-              />
-              <input
-                type="email"
-                class="input-form"
-                name="email"
-                placeholder="E-mail"
-              />
-              <input
-                type="password"
-                class="input-form"
-                name="password"
-                placeholder="Password"
-              />
-              <input
-                type="password"
-                class="input-form"
-                name="confPassword"
-                placeholder="Confirm Password"
-              />
-              <input type="submit" value="Enviar" class="btn input-form" />
-              <img src="/imagens/anima-3.gif" alt="" class="imgforms2">
-            </form>
-          </div>
+        <button class="register button" id="showCadastroBtn">Register</button>
+        <!--SEGUNDO FORMULÁRIO PARA CADASTRO-->
+        <div id="cadastroForm" class="form-container oculto">
+          <form class="absolut2">
+            <input type="text" class="input-form" name="name" placeholder="Name" />
+            <input type="email" class="input-form" name="email" placeholder="E-mail" />
+            <input type="password" class="input-form" name="password" placeholder="Password" />
+            <input type="password" class="input-form" name="confPassword" placeholder="Confirm Password" />
+            <input type="submit" value="Enviar" class="btn input-form" />
+            <img src="/imagens/anima-3.gif" alt="" class="imgforms2">
+          </form>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section class="container">
-        <div class="text">
-          <div class="headline">
-            <h1>
-              Better distribution experience, fast and safe delivery with
-              <span class="em">Trackerz</span>
-            </h1>
-            <p class="subheadline">
-              Trust us with all your delivers, we guarantee we will handle them
-              carefully, quickly and cheaply
-            </p>
-          </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container">
+      <div class="text">
+        <div class="headline">
+          <h1>
+            Better distribution experience, fast and safe delivery with
+            <span class="em">Trackerz</span>
+          </h1>
+          <p class="subheadline">
+            Trust us with all your delivers, we guarantee we will handle them
+            carefully, quickly and cheaply
+          </p>
         </div>
-        <div>
-          <img
-            src="imagens/imagem.jpg"
-            alt="Desenho de um entregador pilotado uma moto, com mochila de entrega nas costas e logo atrás tem o senho de um celular com um aplicativo de GPS aberto"
-            class="main-img"
-          />
-        </div>
-      </section>
-    </main>
+      </div>
+      <div>
+        <img src="imagens/imagem.jpg"
+          alt="Desenho de um entregador pilotado uma moto, com mochila de entrega nas costas e logo atrás tem o senho de um celular com um aplicativo de GPS aberto"
+          class="main-img" />
+      </div>
+    </section>
+  </main>
 
-  <section class="search-menu">
-    <!-- ! colocar os inputs dentro de forms -->
-    <div class="left-side">
-      <p class="menu-heading">Tracking Package</p>
-      <input class="menuInput" type="number" id="register" name="register" required
-        placeholder="your registered number" />
-      <button class="tracking button">Tracking</button>
-    </div>
+  <section>
+    <div class="search-menu">
+      <div class="left-side">
+        <h4 class="menu-heading">Tracking Package</h4>
+        <input class="menuInput" type="number" id="register" name="register" required
+          placeholder="your registered number" />
+        <button class="tracking button">Tracking</button>
+      </div>
 
-    <div class="right-side">
-      <p class="menu-heading">Shipping rate</p>
-      <input class="menuInput" type="text" id="origin" name="origin" required placeholder="Your origin" />
-      <input class="menuInput" type="text" id="destination" name="destination" required placeholder="Your destination" />
-      <input class="menuInput" type="number" id="weight" name="weight" placeholder="1" />
-      <button class="check">Check</button>
+      <div class="right-side">
+        <h4 class="menu-heading">Shipping rate</h4>
+        <div class="input-group">
+          <input class="menuInput" type="text" id="origin" name="origin" required placeholder="Your origin" />
+          <input class="menuInput" type="text" id="destination" name="destination" required
+            placeholder="Your destination" />
+          <input class="menuInput" type="number" id="weight" name="weight" placeholder="1" />
+          <button class="check">Check</button>
+        </div>
+      </div>
     </div>
   </section>
+
   <section>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15925.210918470839!2d-38.495503500000005!3d-3.7440853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695852919010!5m2!1spt-BR!2sbr"
