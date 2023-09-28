@@ -176,11 +176,11 @@ button {
 }
 
 .menuInput {
-  /* padding: 10px; */
-  /* margin: 10px 0; */
-  /* border: 1px solid #ccc; */
-  /* border-radius: 4px; */
-  /* cursor: pointer; */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .check {
@@ -287,3 +287,5 @@ background: none;
   position: absolute;
   background: none;
 }
+
+/* #endregion */
