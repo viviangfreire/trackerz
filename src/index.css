@@ -28,32 +28,10 @@ body {
 
 body {
   background-color: var(--brand-light2);
-margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2)
-}
-
-:root {
-  --orange-main: rgb(255, 69, 0);
-  --light-orange: rgb(253, 140, 41);
-  --blue-main: rgb(0, 0, 67);
-  --brand-light: rgb(231, 231, 231);
-  --brand-light2: rgb(247, 247, 247);
-  --brand-dark: rgb(0, 0, 0);
-  --light-gray: rgb(157, 157, 157);
-  --brand-orange: rgb(251, 80, 37);
-  --light-blue: rgb(12, 12, 158);
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background-color: var(--brand-light2);
-  font-family: "Mooli", sans-serif;
+  background-color: var(--brand-light2) font-family: "Mooli", sans-serif;
 }
 
 /* #endregion */
