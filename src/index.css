@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2)
+  text-decoration: none;
 }
 
 :root {
@@ -28,10 +28,7 @@ body {
 
 body {
   background-color: var(--brand-light2);
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2);
   font-family: "Mooli", sans-serif;
 }
 
@@ -49,7 +46,6 @@ body {
 .headertext {
   color: var(--orange-main);
   font-size: 1.88rem;
-  text-decoration: none;
 }
 
 button {
@@ -96,7 +92,6 @@ button {
   margin-right: 4.5rem;
   display: inline-block;
   transition: 0.3s;
-  text-decoration: none;
   color: black;
   font-weight: bold;
 }
@@ -287,4 +282,39 @@ background: none;
 .absolut2{
   position: absolute;
   background: none;
+}
+
+/*-------------- FOOTER ------------------*/
+
+footer {
+  background-color: var(--blue-main);
+  padding-inline: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title-footer, .paragraph {
+  color: var(--orange-main);
+  text-align: left;
+  padding: 1rem;
+}
+
+.paragraph {
+  color: var(--brand-light2 );
+  line-height: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  
 }
