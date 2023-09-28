@@ -31,7 +31,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--brand-light2) font-family: "Mooli", sans-serif;
+  background-color: var(--brand-light2) font-family "Mooli", sans-serif;
 }
 
 /* #endregion */
