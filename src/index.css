@@ -27,7 +27,6 @@ body {
 }
 
 body {
-  box-sizing: border-box;
   background-color: var(--brand-light2);
   font-family: 'Roboto', sans-serif;
 }
@@ -39,13 +38,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .94rem 5rem 1.25rem 5rem;
-  margin: .94rem 5rem 1.25rem 5rem;
+  padding: 1.5rem;
+  margin-inline: 9rem;
 }
 
 .headertext {
   color: var(--orange-main);
-  font-size: 1.88rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 button {
@@ -53,12 +53,13 @@ button {
   height: 2.5rem;
   width: 5.63rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .login {
   background-color: var(--brand-light2);
-  color: var(--brand-dark);
-  border: .1rem solid var(--brand-dark);
+  color: var(--blue-main);
+  border: .1rem solid var(--blue-main);
 }
 
 .register,
@@ -71,28 +72,23 @@ button {
 .login:hover {
   background-color: var(--brand-light);
   transform: scale(1.03);
-  cursor:pointer;
 }
 
 .register:hover,
 .tracking:hover {
   background-color: var(--light-orange);
   transform: scale(1.03);
-  cursor:pointer;
 }
 
 .menu ul {
   display: flex;
-  list-style: none;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .menu a {
-  margin-right: 4.5rem;
-  display: inline-block;
+  margin-right: 1.5rem;
   transition: 0.3s;
-  text-decoration: none;
-  color: var(--brand-dark);
+  color: var(--blue-main);
   font-weight: bold;
 }
 
@@ -108,25 +104,15 @@ button {
 
 .container {
   display: flex;
-  margin: .63rem 9.38rem;
-  padding: .63rem 6.25rem;
+  margin-inline: 2rem;
+  padding: 1rem;
   align-items: center;
-  justify-content: center;
-  /* flex-direction: row; */
-}
-
-.main-img {
-  max-width: 43.75rem;
-}
-
-.text {
-  flex-direction: column;
 }
 
 .headline {
   font-size: 1.88rem;
-  align-items: center;
-  align-items: center;
+  padding-inline: 8rem;
+  color: var(--blue-main);
 }
 
 .subheadline {
@@ -146,9 +132,10 @@ button {
 .search-menu {
   display: flex;
   justify-content: center;
-  /* padding: 20px; */
-  /* margin: 10px; */
-  /* align-items: center; */
+  align-items: stretch;
+  padding: 20px;
+  max-width: 70rem;
+  margin: 0 auto;
 }
 
 .left-side {
@@ -156,6 +143,7 @@ button {
   color: var(--brand-light);
   padding: 1.25rem;
   border-radius: 1.25rem 0 0 1.25rem;
+  flex: 1;
 }
 
 .menu-heading {
@@ -169,14 +157,22 @@ button {
   color: var(--brand-light);
   padding: 20px;
   border-radius: 0 20px 20px 0;
+  flex: 1;
+}
+
+.input-group {
+  background-color: transparent;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
 }
 
 .menuInput {
-  /* padding: 10px; */
-  /* margin: 10px 0; */
-  /* border: 1px solid #ccc; */
-  /* border-radius: 4px; */
-  /* cursor: pointer; */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 11px;
+  cursor: pointer;
 }
 
 .check {
@@ -195,9 +191,39 @@ button {
   cursor: pointer;
 }
 
+#register {
+  width: 25rem;
+}
+
+#origin {
+  max-width: 9rem;
+}
+
+#destination {
+  max-width: 14rem;
+}
+
+#weight {
+  max-width: 3rem;
+}
+
+.menuSubtitles {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+  margin-top: 5px;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  font-style: italic;
+}
+
+.white{
+  color: white;
+}
+
 /* #endregion */
 
-/* #region: -----FORMULÁRIOS----- */
+/* #region: 
+/*------------ FORMULÁRIOS ---------- */
 
 .oculto {
   display: none;
@@ -206,7 +232,7 @@ button {
 .form-container {
   width: 400px;
   min-height: 400px;
-  background:rgba(246, 244, 241, 0.74);
+  background: rgba(246, 244, 241, 0.74);
   border-radius: 10px, 0.192;
   flex-direction: column;
   justify-content: center;
@@ -223,19 +249,19 @@ button {
   /*centralizando verticalmente e horizontalmente em relação ao pai*/
 }
 
-.imgforms{
+.imgforms {
   width: 100%;
-  right:60%;
-  left: 60%; 
+  right: 60%;
+  left: 60%;
   border: none;
- /* height: 50em; */
-  /* margin: 0%; */
-}
-.imgforms2{
+  }
+
+.imgforms2 {
   width: 100%;
-  right:80%;
+  right: 80%;
   border: none;
 }
+
 .input-form {
   width: 60%;
   background: rgba(0, 0, 67, 0.477);
@@ -308,10 +334,72 @@ li {
   display: inline-block;
 }
 
+
 @media (max-width: 480px) {
-  
+
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .menu {
+    padding-block: .8rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .headertext {
+    text-align: center;
+  }
+
+.container {
+  flex-wrap: wrap;
 }
 
-@media (max-width: 480px){
-  
+.headline {
+font-size: 1.3rem;
+padding-inline: 2rem;
 }
+
+img {
+  width: 80%;
+}
+
+.search-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side {
+  border-radius: 20px 20px 0 0;
+}
+
+.right-side {
+  border-radius: 0 0 20px 20px;
+}
+
+#register, #origin, #destination, #weight {
+  max-width: fit-content;
+}
+
+.input-group {
+  flex-direction: column;
+}
+
+footer {
+  max-height: 5rem;
+}
+
+.paragraph {
+  visibility: hidden;
+}
+}
+
+

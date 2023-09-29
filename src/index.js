@@ -14,3 +14,5 @@ showCadastroBtn.addEventListener("click", (e) => {
   cadastroForm.classList.add("oculto");
   cadastroForm.classList.remove("oculto");
 });
+
+
