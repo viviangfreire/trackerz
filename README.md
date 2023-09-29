@@ -7,6 +7,11 @@
  <p align = center>
   <img width ="600px" src="https://github.com/viviangfreire/trackerz/blob/main/project%20goal%20screenshot.jpg">
   </p>
+
+## Resultado 
+<p align = center>
+  <img width ="600px" src="https://imagem.app/image/oHDwgb">
+  </p>
   
  ## Explicação 📑
  
