@@ -13,7 +13,7 @@
   <img width ="600px" src="https://imagem.app/image/oHDwgb">
   </p>
   
- ## Explicação 📑
+ ## Projeto 📑
  
  <p> No decorrer do nosso curso na Digital College, a turma FS 26 teve a oportunidade de realizar o seu primeiro trabalho em equipe sob a orientação do professor José Daniel. Esta experiência foi muito valiosa, proporcionando-nos não apenas conhecimento prático, mas também habilidades essenciais de colaboração.
 Durante o projeto, todos os membros da equipe se empenharam e contribuíram de maneira significativa. Aprendemos a importância da comunicação eficaz, da partilha de ideias e da resolução de problemas em conjunto. Cada um de nós trouxe perspectivas únicas para o projeto, enriquecendo-o ainda mais.
