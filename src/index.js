@@ -5,14 +5,12 @@ const cadastroForm = document.getElementById("cadastroForm");
 
 showLoginBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  loginForm.classList.add("oculto");
   loginForm.classList.remove("oculto");
+  cadastroForm.classList.add("oculto");
 });
 
 showCadastroBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  cadastroForm.classList.add("oculto");
   cadastroForm.classList.remove("oculto");
+  loginForm.classList.add("oculto");
 });
-
-
