@@ -1,6 +1,13 @@
 <h1 align = center> Trackerz <h1>
- <h2 align = center> Primeiro trabalho em equipe - turma FS-26 - Digital College<h2>
+<h2 align = center> Primeiro trabalho em equipe - turma FS-26 - Digital College<h2>
 
+  ![Badge](https://img.shields.io/static/v1?label=DEV&message=EquipePipoquinhas&color=4B0082&style=flat&logo=)
+
+  ## Proposta 👀
+ <p align = center>
+  <img width ="600px" src="https://github.com/viviangfreire/trackerz/blob/main/project%20goal%20screenshot.jpg">
+  </p>
+  
  ## Explicação 📑
  
  <p> No decorrer do nosso curso na Digital College, a turma FS 26 teve a oportunidade de realizar o seu primeiro trabalho em equipe sob a orientação do professor José Daniel. Esta experiência foi muito valiosa, proporcionando-nos não apenas conhecimento prático, mas também habilidades essenciais de colaboração.
