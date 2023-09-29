@@ -354,6 +354,11 @@ li {
   display: inline-block;
 }
 
+.social-links ul{
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 480px) {
   .header {
     display: block;
