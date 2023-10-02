@@ -1,16 +1,16 @@
 const showLoginBtn = document.getElementById("showLoginBtn");
-const showCadastroBtn = document.getElementById("showCadastroBtn");
+const showRegisterBtn = document.getElementById("showRegisterBtn");
 const loginForm = document.getElementById("loginForm");
-const cadastroForm = document.getElementById("cadastroForm");
+const registerForm = document.getElementById("registerForm");
 
 showLoginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   loginForm.classList.remove("oculto");
-  cadastroForm.classList.add("oculto");
+  registerForm.classList.add("oculto");
 });
 
-showCadastroBtn.addEventListener("click", (e) => {
+showRegisterBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  cadastroForm.classList.remove("oculto");
+  registerForm.classList.remove("oculto");
   loginForm.classList.add("oculto");
 });

@@ -10,36 +10,36 @@
 
   <body>
     <header>
-      <nav class="header">
-        <a href="#" class="headertext">
+      <nav class="navbar">
+        <a href="#" class="headerText">
           <p>Trackerz</p>
         </a>
         <div class="menu">
           <ul>
-            <li><a href="#" class="menuh">Company</a></li>
-            <li><a href="#" class="menuh">Our Service</a></li>
-            <li><a href="#" class="menuh">Business Solution</a></li>
-            <li><a href="#" class="menuh">Careers</a></li>
+            <li><a href="#" class="menuItem">Company</a></li>
+            <li><a href="#" class="menuItem">Our Service</a></li>
+            <li><a href="#" class="menuItem">Business Solution</a></li>
+            <li><a href="#" class="menuItem">Careers</a></li>
           </ul>
         </div>
-        <div class="buttons">
-          <button class="login button" id="showLoginBtn">Login</button>
+        <div class="buttonsNav">
+          <button class="login" id="showLoginBtn">Login</button>
           <!--PRIMEIRO FORMULÁRIO DE LOGIN-->
-          <div id="loginForm" class="form-container oculto">
-            <form class="absolut">
+          <div id="loginForm" class="formContainer oculto">
+            <form class="formBox">
               <input
                 type="text"
-                class="input-form"
+                class="inputForm"
                 name="nome"
                 placeholder="Username"
               />
               <input
                 type="password"
-                class="input-form"
+                class="inputForm"
                 name="email"
                 placeholder="Password"
               />
-              <input type="submit" value="Enviar" class="btn input-form" />
+              <input type="submit" value="Enviar" class="btn inputForm" />
 
               <p class="forget">
                 Forgot Password ?
@@ -50,73 +50,72 @@
                 <a href="#">Sign up </a>
               </p>
             </form>
-            <img src="./imagens/anima-3.gif" alt="" class="imgforms" />
+            <img src="./imagens/anima-3.gif" alt="" class="imgForm" />
           </div>
-          <button class="register button" id="showCadastroBtn">Register</button>
+          <button class="register" id="showRegisterBtn">Register</button>
           <!--SEGUNDO FORMULÁRIO PARA CADASTRO-->
-          <div id="cadastroForm" class="form-container oculto">
-            <form class="absolut">
+          <div id="registerForm" class="formContainer oculto">
+            <form class="formBox">
               <input
                 type="text"
-                class="input-form"
+                class="inputForm"
                 name="name"
                 placeholder="Name"
               />
               <input
                 type="email"
-                class="input-form"
+                class="inputForm"
                 name="email"
                 placeholder="E-mail"
               />
               <input
                 type="password"
-                class="input-form"
+                class="inputForm"
                 name="password"
                 placeholder="Password"
               />
               <input
                 type="password"
-                class="input-form"
+                class="inputForm"
                 name="confPassword"
                 placeholder="Confirm Password"
               />
-              <input type="submit" value="Enviar" class="btn input-form" />
+              <input type="submit" value="Enviar" class="btn inputForm" />
             </form>
-            <img src="/imagens/anima-3.gif" alt="" class="imgforms2" />
+            <img
+              src="/imagens/anima-3.gif"
+              alt="gif de um homem pilotando uma moto"
+              class="imgForm2"
+            />
           </div>
         </div>
       </nav>
     </header>
     <main>
       <section class="container">
-        <div class="text">
-          <div class="headline">
-            <h1>
-              Better distribution experience, fast <br />
-              and safe delivery <br />
-              with
-              <span class="em">Trackerz</span>
-            </h1>
-            <p class="subheadline">
-              Trust us with all your delivers, we guarantee we will handle them
-              carefully, quickly and cheaply
-            </p>
-          </div>
+        <div class="headline">
+          <h1>
+            Better distribution experience, fast and safe delivery <br />
+            with
+            <span>Trackerz</span>
+          </h1>
+          <p class="subheadline">
+            Trust us with all your delivers, we guarantee we will handle them
+            carefully, quickly and cheaply
+          </p>
         </div>
         <div>
-          <img
-            src="imagens/imagem.jpg"
-            alt="Desenho de um entregador pilotado uma moto, com mochila de entrega nas costas e logo atrás tem o desenho de um celular com um aplicativo de GPS aberto"
-            class="main-img"
-          />
+          <img src="imagens/imagem.jpg" alt="Desenho de um entregador pilotado
+          uma moto, com mochila de entrega nas costas e logo atrás tem o desenho
+          de um celular com um aplicativo de GPS aberto" " />
         </div>
       </section>
     </main>
 
     <section>
-      <div class="search-menu">
-        <div class="left-side">
-          <h4 class="menu-heading">Tracking Package</h4>
+      <div class="searchMenu">
+        <div class="leftSide">
+          <h4 class="menuHeading">Tracking Package</h4>
           <form>
             <input
               class="menuInput"
@@ -126,16 +125,16 @@
               required
               placeholder="Your registered number"
             />
-            <button class="tracking button">Tracking</button>
+            <button class="tracking">Tracking</button>
           </form>
           <p class="menuSubtitles">
             Then Click 'TRACKING' Avaliable up to 20 Airwaybill
           </p>
         </div>
 
-        <div class="right-side">
-          <h4 class="menu-heading">Shipping rate</h4>
-          <div class="input-group">
+        <div class="rightSide">
+          <h4 class="menuHeading">Shipping rate</h4>
+          <div class="inputGroup">
             <div>
               <input
                 class="menuInput"
@@ -145,7 +144,7 @@
                 required
                 placeholder="Your origin"
               />
-              <p class="menuSubtitles white">Origin Shipment</p>
+              <p class="menuSubtitles">Origin Shipment</p>
             </div>
             <div>
               <input
@@ -156,7 +155,7 @@
                 required
                 placeholder="Your destination"
               />
-              <p class="menuSubtitles white">Destination Shipment</p>
+              <p class="menuSubtitles">Destination Shipment</p>
             </div>
             <div>
               <input
@@ -166,7 +165,7 @@
                 name="weight"
                 placeholder="1"
               />
-              <p class="menuSubtitles white">Weight</p>
+              <p class="menuSubtitles">Weight</p>
             </div>
             <button class="check">Check</button>
           </div>
@@ -178,12 +177,12 @@
     <footer>
       <div>
         <a href="#">
-          <h2 class="title-footer">Trackerz</h2>
+          <h2 class="titleFooter">Trackerz</h2>
         </a>
       </div>
-      <p class="paragraph">©2023 - Todos os direitos reservados.</p>
+      <p class="reserved">©2023 - Todos os direitos reservados.</p>
 
-      <div class="social-links">
+      <div class="socialLinks">
         <ul>
           <li>
             <a target="_blank" href="https://instagram.com/trackerzoficial"
