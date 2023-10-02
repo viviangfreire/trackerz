@@ -385,6 +385,14 @@ li {
     line-height: normal;
   }
 
+  .container {
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 100%;
+  }
+
   .searchMenu {
     display: flex;
     flex-direction: column;
