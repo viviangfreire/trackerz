@@ -1,16 +1,16 @@
 <h1 align = center> Trackerz <h1>
-<h2 align = center> Primeiro trabalho em equipe - turma FS-26 - Digital College<h2>
+<h2 align = center> Primeiro trabalho em equipe - Turma FS-26 - Digital College<h2>
 
-  ![Badge](https://img.shields.io/static/v1?label=DEV&message=EquipePipoquinhas&color=4B0082&style=flat&logo=)
+  ![Badge](https://img.shields.io/static/v1?label=DEVS&message=EquipePipoquinhas&color=ff4500&style=flat&logo=)
 
   ## Proposta 👀
  <p align = center>
   <img width ="600px" src="https://github.com/viviangfreire/trackerz/blob/main/project%20goal%20screenshot.jpg">
   </p>
 
-## Resultado 
+## Resultado ✅ 
 <p align = center>
-  <img width ="600px" src="https://imagem.app/image/oHDwgb">
+  <img width ="800px" src="https://github.com/viviangfreire/trackerz/blob/main/imagens/img-readme.png">
   </p>
   
  ## Projeto 📑
